@@ -35,6 +35,8 @@ int main() {
         return 1;
     }
 
+    
+
     client_fd = accept(server_fd, (struct sockaddr *)&addr, &addr_len);
     while(1) {
         memset(buffer, 0, sizeof(buffer));
